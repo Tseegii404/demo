@@ -1,0 +1,456 @@
+
+.navbar{
+  position: relative;
+    list-style-type: none;
+    
+}
+
+
+
+ul { 
+    position: none;
+    list-style-type: none;
+    margin: -15px;
+    height: 90px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #622792;
+    }
+    
+    li {
+    float: right;
+    margin-right: 65px;
+    margin-top: 20px;
+    }
+    
+    li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+    
+    li a:hover, .dropdown:hover .dropbtn {
+    color: #aace35;
+    }
+    
+    li.dropdown {
+    display: inline-block;
+    }
+    
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+    
+    .dropdown-content a {
+    color: rgb(134, 134, 134);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    }
+    
+    .dropdown-content a:hover {background-color: #622792;
+    color: #aace35}
+    
+    .dropdown:hover .dropdown-content {
+    display: block;
+    }
+
+
+    
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+.mySlides fade{
+  width: 100%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+.app1{
+    display: inline-block;
+    border-radius: 40px;
+    background-color: #622792;
+    text-align: center;
+    margin: center;
+}
+.app2{
+    display: inline-block;
+    border-radius: 40px;
+    background-color: #622792;
+    text-align: center;
+    margin: center;
+
+}
+.apps{
+text-align: center;
+margin-top: 2.5%;
+
+
+}
+.apps a{
+  color: white;
+  text-decoration: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  
+}
+.apps .app1 + .app2{
+margin-left: 8%;
+}
+.gifheseg .icon img{
+  width: 96px;
+  height: 96px;
+  filter: grayscale(100%);
+}
+.icon{
+display: inline-block;
+font-size: 15px;
+}
+.gifheseg{
+  margin-top: 2.5%;
+  text-align: center;
+
+  background-image: url(ariin.png);
+}
+.gifheseg .icon+.icon{
+  margin-left: 10%;
+}
+.gifheseg .icon img:hover{
+filter: invert(0%);
+}
+.tseegii{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  bottom: -1vh;
+  width: 101%;
+  background-color:#622792 ;
+  color: #ffffff;
+  padding-top: 20px;
+}
+
+.inner-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inner-container .sasuke + .sasuke {
+
+  float: left;
+}
+.first {
+  height: 30%;
+}
+.first img {
+  height: 30;
+}
+.second {
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+}
+.second div + div {
+  margin-left: 20px;
+}
+.second a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Open Sans', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-display: swap;
+}
+.third {
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+}
+.third .social-icon-con + .social-icon-con {
+  margin-left: 15px ;
+}
+.social-icon {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+}
+.social-icon-con {
+  width: 35px; 
+  height: 35px;
+  border-radius: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-icon-con:hover .social-icon {
+  color: #000000;
+}
+.social-icon-con:hover {
+ 
+  background-color: #fff;
+  transition: 0.3s;
+  transform: scale(1.3);
+}
+.last {
+  height: 25%;
+  font-size: 11px;
+  color: #8d8b8b;
+  font-family: 'Open Sans', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-display: swap;
+}
+.last span {
+  margin-right: 20px;
+}
+.second a:hover {
+color:#aace35;
+transition: 0.3s;
+}
+.zurag{
+  background-image: url(ariin.png);
+  background-size: 100% 100%;
+  background-color: white;
+  
+}
+
+.MedeeMedeelel {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  background-image: url(ariin.png);
+}
+
+.Medeekart{
+  width: 22%;
+  height: auto;
+  position: relative;
+  float: left;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.MedeeniiZurag {
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 1vh;
+  height: 15rem;
+  float: left;
+}
+
+.MedeeniiBody {
+  position: relative;
+  width: 100%;
+  height: auto;
+  float: left;
+}
+
+.MedeeniiTitle {
+  float: left;
+  width: 100%;
+  font-size: 2vh;
+  text-align: center;
+  font-weight: 900;
+}
+
+.MedeeniiOgnoo {
+  width: 50%;
+  font-size: 2vh;
+  height: auto;
+  float: left;
+  margin-top: -1vh;
+}
+
+.MedeeniiTovchTailbar {
+  clear: both;
+  text-align: justify;
+  text-indent: 3rem;
+  font-size: 2vh;
+}
+
+/*Medee responsive heseg*/
+@media (min-width: 100px) and (max-width: 900px) {
+  .Ontsloh-zurag {
+      width: 100%;
+
+  }
+  .Ontsloh-text {
+      margin-left: 1%;
+      position: absolute;
+      width: 98%;
+      transform: translateY(-110%);
+  }
+  #o1 {
+      margin-right: 0;
+  }
+  #o2 {
+      margin-left: 0;
+  }
+  .Medeekart{
+      width: 100%;
+  }
+  .MedeeniiZurag {
+      width: 30%;
+      margin-right: 2%;
+  }
+  .MedeeniiBody {
+      width: 68%;
+      font-size: small;
+  }
+  .MedeeniiTitle {
+      text-align: left;
+  }
+}
+@media (min-width: 900px) and (max-width: 1200px) {
+  .Ontsloh-zurag {
+      width: 49%;
+  }
+  .Ontsloh-text {
+      margin-left: 1%;
+      position: absolute;
+      width: 47%;
+      transform: translateY(-105%);
+  }
+  .Medeekart{
+      width: 100%;
+  }
+  .MedeeniiZurag {
+      width: 40%;
+      margin-right: 2%;
+  }
+  .MedeeniiBody {
+      width: 58%;
+  }
+  .MedeeniiTitle {
+      text-align: left;
+  }
+}
+.niit{
+display: inline-block;
+margin-left: 9%;
+margin-bottom: 2%;
+margin-top: 2%;
+background-image: url(ariin.png);
+}
+.youtube{
+  display: inline-block;
+  
+  
+}
+.facebook{
+  display: inline-block;
+  
+}
+.niit iframe{
+  width: 600px;
+  height: 400px;
+  
+}
+
+
+

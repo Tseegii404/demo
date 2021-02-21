@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../turhsilt"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../../C append"
+		},
+		{
+			"path": "../../C# "
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "web"
+	}
+}
